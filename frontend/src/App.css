@@ -524,3 +524,15 @@ background-size:60px 60px;
   
   
 }
+
+.transactions-table {
+  table-layout: fixed; /* Ensures fixed width for cells */
+  width: 100%;         /* Optional, depending on table size */
+}
+
+.transactions-table td {
+  white-space: nowrap;      /* Prevent text wrapping */
+  overflow: hidden;         /* Hide overflowed text */
+  text-overflow: ellipsis;  /* Show ellipsis for overflowing text */
+  width: 150px;             /* Set a fixed width for the cell */
+}
